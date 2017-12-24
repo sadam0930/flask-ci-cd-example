@@ -11,3 +11,8 @@ This is a demo application that creates a simple flask webserver with an API end
 * RESTful API for handling image upload
 * Unit test for API
 * CI integration with travis-ci
+* Docker container for easy deployment
+```
+docker build -t image upload .
+docker run -d --name imageupload -p 5000:5000 --rm
+```
