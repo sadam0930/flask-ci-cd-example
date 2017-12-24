@@ -16,3 +16,4 @@ This is a demo application that creates a simple flask webserver with an API end
 docker build -t image upload .
 docker run -d --name imageupload -p 5000:5000 --rm
 ```
+* Procfile for deploying to heroku (non-docker)
