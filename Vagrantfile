@@ -28,4 +28,14 @@ Vagrant.configure(2) do |config|
     sudo pip install -r requirements.txt
   SHELL
 
+  ######################################################################
+  # Optional: run app in a Docker container
+  ######################################################################
+  config.vm.provision "docker" do |d|
+    d.build_image "/vagrant",
+      args: "-t imageupload"
+    d.run "imageupload",
+      args: "--restart=always -d --name imageupload -p 5000:5000 --rm"
+  end
+
 end
