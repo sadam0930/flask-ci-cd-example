@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/sadam0930/flask-ci-cd-example.svg?branch=master)](https://travis-ci.org/sadam0930/flask-ci-cd-example)
+[![Build Status](https://travis-ci.org/sadam0930/flask-ci-cd-example.svg?branch=master)](https://travis-ci.org/sadam0930/flask-ci-cd-example)
 
 # Flask App for Image Upload
 
